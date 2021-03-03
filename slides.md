@@ -63,7 +63,7 @@ Photo by [Ena Begcevic](https://unsplash.com/@enabegcevuc?utm_source=unsplash&am
   $$
   with $J_{ij} = \partial y_i / \partial x_j$
 
-# Three ways to a compute derivative
+# Three ways to compute a derivative
 
 - $\mathcal{R} \to \mathcal{R}$
   $$
@@ -148,19 +148,15 @@ $$
   - $\epsilon^2 = 0$ instead of $i^2 = -1$
   - $\text{st}( \dots )$ extracts real number, analog to $\text{Re}(\dots)$ for complex number
 - Laws for addition, multiplication, inverse, power can be easily derived
-
-  $(x + a \epsilon) + (y + b \epsilon) = (x + y) + (a + b) \epsilon$
-
-  $(x + a \epsilon) (y + b \epsilon) = xy + (xb + ya)\epsilon$
-
-  $\dfrac{1}{x + a \epsilon} = \dfrac{x - a \epsilon}{(x + a \epsilon) (x - a \epsilon)} = \dfrac{x - a \epsilon}{x^2} = \dfrac 1x - \dfrac a {x^2} \epsilon$
-
-  $(x + a \epsilon)^n = (x + a \epsilon) (x + a \epsilon) \dots =  x^n + n x^{n-1} a \epsilon$
+  - $(x + a \epsilon) + (y + b \epsilon) = (x + y) + (a + b) \epsilon$
+  - $(x + a \epsilon) (y + b \epsilon) = xy + (xb + ya)\epsilon$
+  - $\dfrac{1}{x + a \epsilon} = \dfrac{x - a \epsilon}{(x + a \epsilon) (x - a \epsilon)} = \dfrac{x - a \epsilon}{x^2} = \dfrac 1x - \dfrac a {x^2} \epsilon$
+  - $(x + a \epsilon)^n = (x + a \epsilon) (x + a \epsilon) \dots =  x^n + n x^{n-1} a \epsilon$
 - With these rules can go on to compute polynomials, transcendental functions expressible as infinite series of polynomials and so on
 
 ---
 
-* We can program these dual numbers into computers
+* We can program these hyperreal numbers into computers
 * Any code that works on real numbers also works on hyperreal numbers
 * Derivatives are computed automatically as a side-product
 * Also works if code uses computer things like `if`, `while`, ...
